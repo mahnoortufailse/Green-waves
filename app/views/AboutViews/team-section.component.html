@@ -1,0 +1,30 @@
+<div style="background-color: #F4F9FF;">
+    <div class="container text-center py-5">
+        <!-- Badge -->
+        <div class="badge-custom px-4 py-2 rounded-pill text-black shadow-sm d-inline-flex align-items-center">
+            <i class="fas fa-leaf medal me-2"></i> {{team.team.badgeText}}
+        </div>
+
+        <!-- Title & Subtitle -->
+        <h2 class="fw-bold mt-3">{{team.team.title}}</h2>
+        <p class="text-secondary">{{team.team.subtitle}}</p>
+
+        <!-- Team Members Grid -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3" ng-repeat="member in team.team.members">
+                <div class="card border-0 shadow-sm rounded-lg position-relative">
+                    <!-- Card Image -->
+                    <img ng-src="{{member.image}}" class="card-img-top rounded-top" alt="{{member.name}}">
+                    
+                    <!-- Card Body Overlay -->
+                    <div class="card-body-overlay">
+                        <div class="card-body-content ">
+                            <h5 class="fw-bold mb-0">{{member.name}}</h5>
+                            <p class="text-secondary">{{member.role}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

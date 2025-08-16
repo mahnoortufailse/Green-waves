@@ -1,0 +1,44 @@
+<section class="hero-section py-2">
+    <div class="row align-items-center px-5 container">
+        <!-- Left Side Content -->
+        <div class="col-lg-6 col-md-12 text-center text-lg-start">
+            <p class="text-success d-flex justify-content-center justify-content-lg-start align-items-center fw-medium">
+                <img ng-src="{{$ctrl.heartImage}}" alt="Heart Icon" class="me-2" width="30">
+                {{ $ctrl.subtitle }}
+            </p>
+
+            <h1 class="display-4 fw-bolder mt-3">
+                {{ $ctrl.title }}
+            </h1>
+
+            <p class="text-black mt-3">
+                {{ $ctrl.description }}
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-4 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-start gap-3">
+                <a ng-href="{{$ctrl.btnLink}}" class="btn text-white px-4 py-2 shadow" style="background-color: #28a745;">
+                    {{ $ctrl.btnText }}
+                </a>
+                <a href="#" class="text-learn fw-medium text-decoration-none">Learn More</a>
+            </div>
+
+            <!-- Social Media Links (conditionally displayed) -->
+            <div class="mt-4 d-flex justify-content-center justify-content-lg-start align-items-center gap-4" ng-if="$ctrl.showSocial">
+                <span class="fw-bold letter-spacing">
+                    <span style="color: #01C000;">FOLLOW</span>
+                    <span style="color: #008101;">US</span>
+                </span>
+                <a href="#" class="fs-4 icon-color"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="fs-4 icon-color"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="fs-4 icon-color"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="fs-4 icon-color"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+            <img ng-src="{{$ctrl.heroImage}}" alt="Hero Illustration" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+</section>

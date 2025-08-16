@@ -1,0 +1,13 @@
+<section class="bgAll text-white py-5 my-5">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3 mb-3" ng-repeat="stat in $ctrl.stats">
+                <div class="bg-white text-success p-3 rounded d-inline-block">
+                    <i class="{{ stat.icon }} fa-2x icon-color"></i>
+                </div>
+                <h3 class="mt-2 fw-bold">{{ stat.value }}</h3>
+                <p class="mb-0 ">{{ stat.label }}</p>
+            </div>
+        </div>
+    </div>
+</section>

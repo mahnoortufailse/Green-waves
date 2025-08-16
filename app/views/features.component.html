@@ -1,0 +1,38 @@
+<section class="text-center py-5">
+    <div class="container custom-container">
+        <!-- Section Header -->
+        <div class="d-inline-block px-4 py-2 rounded-pill text-black shadow-sm">
+            <i class="fas fa-medal medal"></i> Features
+        </div>
+
+        <h2 class="fw-bold mt-3">GreenWave Green Features</h2>
+        <p class="text-black">Discover how GreenWave makes sustainability rewarding and engaging.</p>
+
+        <!-- Features List -->
+        <div class="row mt-4 justify-content-center mx-auto"> 
+            <div class="col-md-10 d-flex flex-column">
+                <div class="d-flex mb-5 w-75 mx-auto"
+                     ng-repeat="feature in $ctrl.features"
+                     ng-class="{'flex-column flex-md-row text-md-start': feature.id % 2 !== 0, 
+                                'flex-column flex-md-row-reverse text-md-end': feature.id % 2 === 0}"
+                     class="align-items-center align-items-lg-start text-start" 
+                     style="gap: 20px;">
+                    
+                    <!-- Feature Image -->
+                    <div class="feature-image mx-auto">
+                        <img ng-src="{{feature.image}}" class="img-fluid" alt="Feature Image" style="max-width: 300px;">
+                    </div>
+                    
+                    <!-- Feature Content -->
+                    <div class="feature-content  mt-4 mx-auto">
+                        <div class="d-inline-block p-2 top-banner text-white rounded-circle">
+                            <i class="{{ feature.icon }}"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3">{{ feature.title }}</h5>
+                        <p class="text-secondary">{{ feature.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

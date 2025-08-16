@@ -1,0 +1,28 @@
+<section class="about-us-section text-center py-5 mx-auto" 
+         style="min-height: 500px; max-width: 1100px; display: flex; align-items: center;">
+    <div class="container" style="max-width: 1200px;">
+        
+        <!-- Badge -->
+        <div class="d-inline-block px-4 py-2 rounded-pill text-black shadow-sm">
+            <img src="images/like.png" alt="Like Icon" class="me-2" width="30"> 
+            Our Trusted Companies
+        </div>
+
+        <!-- Title & Subtitle -->
+        <h2 class="fw-bold mt-3">Trusted By the Top Companies in the Industry</h2>
+        <p class="text-black">
+            We are proudly trusted by leading companies across the industry, ensuring <br class="d-none d-md-block">
+            reliability and excellence in promoting sustainable actions.
+        </p>
+
+        <!-- Trusted Companies Logos -->
+        <div class="row mt-4 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center my-2"
+                 ng-repeat="company in $ctrl.companies">
+                <img ng-src="{{ company.logo }}" class="img-fluid" 
+                     style="max-height: 120px; width: auto; object-fit: contain;" 
+                     alt="{{ company.name }}">
+            </div>
+        </div>
+    </div>
+</section>

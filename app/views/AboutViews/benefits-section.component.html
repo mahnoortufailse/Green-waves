@@ -1,0 +1,36 @@
+<div class="py-5 benefits-section position-relative">
+  <div class="row align-items-center container">
+    <!-- Left Content -->
+    <div class="col-lg-6 px-5">
+      <span class="badge-custom px-4 py-2 rounded-pill text-black shadow-sm d-inline-flex align-items-center mb-3">
+        <img ng-src="images/message-question.png" alt="Heart Icon" class="me-2" width="30">Become Our Partner
+      </span>
+      <h2 class="fw-bold">Empower Your Business by Promoting Sustainability</h2>
+      <p class="text-secondary">
+        Partner with us to promote your eco-friendly products and services, attract conscious consumers, and enhance your brand’s reputation.
+      </p>
+
+      <!-- Benefits List -->
+      <div class="mt-4">
+        <div ng-repeat="benefit in benefits" class="d-flex align-items-start mb-3">
+          <div class="rounded-circle d-flex align-items-center justify-content-center me-3 p-3" id="count" 
+               style="width: 50px; height: 50px; font-weight: bold;">
+            {{ benefit.number }}
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">{{ benefit.title }}</h5>
+            <p class="text-secondary mb-0">{{ benefit.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Button -->
+      <button class="btn text-white mt-3 px-5 py-2">Register Now</button>
+    </div>
+
+    <!-- Right Image Section -->
+    <div class="col-lg-6 position-relative align-content-center">
+      <img src="images/11.png" alt="Dashboard Preview" class="img-fluid" id="right-image">
+    </div>
+  </div>
+</div>

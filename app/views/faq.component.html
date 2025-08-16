@@ -1,0 +1,57 @@
+<!-- Top Curve -->
+<div class="wave-bottom">
+    <svg viewBox="0 0 1400 300" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#F4F9FF" fill-opacity="1" 
+            d="M0,224L80,234.7C160,245,320,267,480,256C640,245,800,203,960,181.3C1120,160,1280,160,1360,165.3L1440,171L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+    </svg>
+</div>
+
+<!-- FAQ Section Content -->
+<div class="faq-section discount-section py-5 mt-0">
+    <div class="">
+        <div class="row align-items-center px-5 container">
+            <!-- Left Content -->
+            <div class="col-lg-6 col-md-12 text-md-center text-lg-start">
+                <div class="badge-custom px-4 py-2 d-inline-flex align-items-center">
+                    <i class="fas fa-question-circle medal mx-2"></i> Got a Question?
+                </div>
+                <h2 class="mt-3">Frequently Asked Questions</h2>
+                <p class="text-black" style="font-size: 16px;">
+                    If you can’t find the answer you’re looking for, don’t hesitate to reach out to our support team for further assistance.
+                    Let’s make eco-friendly living rewarding and straightforward together!
+                </p>
+                <button class="btn btn-primary text-white mt-3 px-5 py-2">Learn More</button>
+            </div>
+
+            <!-- Right Accordion -->
+            <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
+                <div class="accordion">
+                    <div class="accordion-item border-0" ng-repeat="faq in $ctrl.faqs track by $index">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between w-100" 
+                                ng-click="$ctrl.toggleFAQ($index)">
+                                <span class="faq-question">{{ faq.question }}</span>
+                                <i class="fas" ng-class="faq.isOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" ng-class="{'show': faq.isOpen}">
+                            <div class="accordion-body text-start">
+                                {{ faq.answer }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<!-- Bottom Curve -->
+<div class="wave-top">
+    <svg viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#F4F9FF" fill-opacity="1" 
+            d="M0,128L80,144C160,160,320,192,480,181.3C640,171,800,117,960,117.3C1120,117,1280,171,1360,197.3L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+        </path>
+    </svg>
+</div>

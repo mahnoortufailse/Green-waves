@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+    font-family: 'DM Sans';
+    
+}
+
+.btn {
+    background: linear-gradient(to bottom, #008101, #01C000);
+    border-radius: 6px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.top-banner {
+  background: linear-gradient(to bottom, #008101, #01C000);
+}
+
+.btn {
+  background: linear-gradient(to bottom, #008101, #01C000);
+  border-radius: 6px;
+}
+
+.nav-item .nav-link:hover, .nav-item .nav-link.active {
+  color: #01C000 !important;
+}
+
+.text-learn{
+  color: #01C000 !important;
+}
+.letter-spacing {
+  letter-spacing: 4px; /* Adjust letter spacing */
+}
+.letter-spacing {
+  letter-spacing: 4px; /* Adjust letter spacing */
+}
+.icon-color {
+  color: #01C000; /* Green icons */
+}
+
+.discount-section {
+  background-color: #F4F9FF; /* Light background */
+  padding: 50px 0;
+}
+.badge-custom {
+  background-color: white; /* Light green background */
+  color: black;
+  padding: 6px 3px;
+  border-radius: 16px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  width: fit-content;
+ 
+  
+}
+.btn-green {
+  background-color: #01C000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+}
+.btn-green:hover {
+  background-color: #008101;
+}
+
+.discount-section .col-md-6 {
+  padding-right: 40px; /* Adjust padding as needed */
+}
+
+.discount-section h2 {
+  font-size: 2.6rem; /* Increase heading size */
+  font-weight: bold;
+}
+
+.discount-section p {
+  font-size: 1.2rem; /* Increase paragraph size */
+  line-height: 1.6;
+  color:black;
+}
+.icon-box {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+}
+
+.medal{
+  color: #01C000; /* Light background */
+  font-size: 22px;
+}
+
+/* Center the Main Container and Limit Width */
+.custom-container {
+  max-width: 900px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Adjust Feature Image */
+.feature-image {
+  width: 270px; /* Decreased width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Adjust Feature Content Width */
+.feature-content {
+  max-width: 400px; /* Limit text width */
+}
+
+/* learn more section */
+.loyalty-card-section {
+  background: url('images/bgForm.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px; /* Adjust padding for better responsiveness */
+  width: 100%;
+  height: 190px;
+}
+
+.loyalty-card-container {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: row; /* Default: Side-by-side layout */
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 20px 30px;
+  max-width: 1150px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .loyalty-card-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center;
+    padding: 20px;
+  }
+  .loyalty-text {
+    margin-bottom: 15px;
+  }
+}
+
+.loyalty-text {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  padding-top: 7px;
+}
+
+.loyalty-btn {
+  background: linear-gradient(to bottom, #008101, #01C000);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loyalty-btn:hover {
+  background-color: #008000;
+}
+
+/* sponsers section */
+.sponsors-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px; /* Reduce gap between images */
+  width: 130px; /* Adjust width to reduce space */
+  height: auto;
+}
+
+.row {
+  margin: 40px !important; /* Remove extra margins */
+}
+.p-0 {
+  padding: 15px !important; /* Ensure no extra padding */
+}
+
+.sponsor-img {
+  max-height: 100px;
+  width: auto;
+  flex: 1 1 calc(50% - 10px); /* 50% width with smaller spacing */
+}
+
+.bgAll{
+  background: linear-gradient(to bottom, #008101, #01C000);
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #F4F9FF;
+  border: none;
+  font-weight: 300;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 15px;
+  color: #6c757d;
+  background: #F4F9FF;
+  border: none;
+}
+.faq-question{
+  font-size: 16px;
+}
+.faq-section {
+  position: relative;
+  background: #F4F9FF;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.wave-top, .wave-bottom {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-top svg, .wave-bottom svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.accordion-button::after {
+  display: none !important; /* Removes Bootstrap's default chevron */
+}
+.footer {
+    /* background: url('images/Logo.jpg') no-repeat center center/cover; */
+    background-color: linear-gradient(to bottom, #008101, #01C000);
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.icon-color2{
+  color: white;
+}
+
+.bgAllFooter {
+  position: relative;
+  background: 
+    linear-gradient(to bottom, rgba(0, 129, 1, 0.9), rgba(1, 192, 0, 0.9)), 
+    url('/images/Logo.png') no-repeat bottom -110px right -110px; /* Move down and right */
+  background-size: cover, 430px; /* Adjust size */
+}
+
+.border-light-custom {
+  border-color: rgba(94, 192, 94, 0.9) !important; /* Adjust opacity for lighter effect */
+}
+
+/* Lighten the placeholder text color */
+.form-control::placeholder {
+  color: #aaa !important; /* Lighter gray */
+  opacity: 1; /* Ensure visibility */
+}
+
+/* Reduce the font size of form labels */
+.form-label {
+  font-size: 14px;
+  font-weight: 500; /* Slightly bold */
+  color: #555; /* Dark gray for better readability */
+}
+
+/* Make the form heading bold */
+.card h4 {
+  font-weight: 700;
+  font-size: 22px; /* Adjust font size if needed */
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active {
+  color: #01C000 !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #01C000;
+}
+
+
+.charity-section {
+  min-height: 100px;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Ensures images resize properly */
+.charity-logo {
+  max-height: 150px;
+  width: auto;
+}
+
+/* Adjusts text & layout on smaller screens */
+@media (max-width: 768px) {
+  .charity-section {
+      padding-top: 50px;
+  }
+
+  .charity-section h2 {
+      font-size: 22px;
+  }
+
+  .charity-section p {
+      font-size: 14px;
+      padding: 0 15px;
+  }
+
+  .charity-logo {
+      max-height: 120px;
+  }
+}
+
+.faq-section {
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 0 !important;
+  
+}
+
+.badge-custom {
+  background: white;
+  color: #333;
+  border-radius: 50px;
+  font-weight: 400;
+}
+
+/* Ensure the FAQ section is well spaced */
+.accordion-button {
+  background: #F4F9FF;
+  border: none;
+  font-weight: 400;
+  padding: 15px;
+}
+
+/* Adjust wave SVGs */
+.wave-bottom svg, 
+.wave-top svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-section h2 {
+      font-size: 22px;
+  }
+
+  .faq-section p {
+      font-size: 14px;
+      padding: 0 15px;
+  }
+
+  .accordion-button {
+      font-size: 16px;
+      padding: 12px;
+  }
+}
+
+.boxIconH{
+  background-color: white;
+  box-shadow: #aaa;
+  box-shadow: #01C000;
+}
+
+.story-container {
+  background-color: #F5FAFF;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.badge-custom {
+  background-color: white;
+  padding: 8px 16px;
+  font-weight: 400;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.badge-custom i {
+  color: #01C000;
+  margin-right: 5px;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Body Overlay */
+.card-body-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230px;
+  height: 83px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Background Images */
+.card-body-overlay::before,
+.card-body-overlay::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-body-overlay::before {
+  background-image: url('images/Ellipse.png'); /* Left bottom image */
+  left: -10px;
+  bottom: -22px;
+}
+
+.card-body-overlay::after {
+  background-image: url('images/DottedShape.png'); /* Right top image */
+  right: -15px;
+  top: -10px;
+}
+/* Adjust Font Sizes */
+.card-body-content h5 {
+  font-size: 16px; /* Decrease the member name font size */
+}
+
+.card-body-content p {
+  font-size: 14px; /* Decrease the role font size */
+}
+
+
+
+.featurecard {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featurecard:hover {
+    transform: translateY(-5px);
+}
+
+.featurecard i {
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto;
+}
+#count {
+  color: white;
+  background: linear-gradient(to bottom, #008101, #01C000); /* Use 'background' instead */
+  border: none; /* Ensure no conflicting border */
+}
+
+#count:hover {
+  background: white;
+  border: 2px solid #008101;
+  color: #008101;
+}
+
+#right-image {
+  position: absolute;
+  right: -120px;
+  
+  transform: translateY(-50%);
+  max-width: 50vw; /* Adjust width to prevent overflow */
+}
+
+.emailcard{
+  background: linear-gradient(to bottom, #008101, #01C000);
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #F8FAFC;
+}
+
+.custom-table thead {
+  background-color: #F7F7F7;
+}
+
+.custom-table th, .custom-table td {
+  padding: 15px;
+  border: 1px solid #e8e9eb;
+  font-size: 14px;
+}
+
+.custom-table th {
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #F5FAFF;
+}
+
+.feature-name {
+  font-weight: 7;
+  background-color: #F1F5F9;
+}
+
+.badge-popular {
+ 
+  background-color: #22C55E;
+  color: white;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.pricing-container {
+  padding: 50px 0;
+}
+
+.card {
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.pricCard h5{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.year{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.pricCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding: 90px;
+}
+
+/* Top-Right Background Image */
+.pricCard::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 40px; /* Adjust size as needed */
+  height: 88px;
+  background: url("images/DottedShape.png") no-repeat center/contain; 
+  /* Adjust transparency */
+}
+
+/* Second Background Image Below the First One */
+.pricCard::after {
+  content: "";
+  position: absolute;
+  top: 36px; /* Slightly below */
+  right: -20px;
+  width: 90px; /* Smaller */
+  height: 100px;
+  background: url("images/Ellipse2.png") no-repeat center/contain; 
+  
+}
+

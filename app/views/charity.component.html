@@ -1,0 +1,22 @@
+<section class="charity-section about-us-section text-center mx-auto">
+    <div class="container">
+        
+        <!-- Badge -->
+        <div class="badge-custom px-4 py-2 rounded-pill  text-black shadow-sm d-inline-flex align-items-center shadow-sm">
+            <img src="images/like.png" alt="Like Icon" class="me-2" width="30"> Charities
+        </div>
+
+        <!-- Title & Subtitle -->
+        <h2 class="fw-bold mt-3">Supporting Worthy Causes</h2>
+        <p class="text-black px-md-5 px-3">
+            We are honored to collaborate with esteemed charitable organizations dedicated to creating a sustainable future. Together, we amplify our impact and drive meaningful change.
+        </p>
+
+        <!-- Trusted Companies Logos -->
+        <div class="row mt-4 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 text-center mb-3" ng-repeat="company in $ctrl.companies">
+                <img ng-src="{{ company.logo }}" class="img-fluid charity-logo" alt="{{ company.name }}">
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <span class="badge-custom px-4 d-inline-block">
+            <i class="fa-solid fa-circle-question medal"></i> Pricing Plans Businesses
+        </span>
+        <h2 class="mt-3 fw-bold">Flexible Plans for Every Business</h2>
+        <p>Choose the Right Plan to Boost Your Eco-Friendly Initiatives</p>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table text-center custom-table">
+            <thead>
+                <tr>
+                    <th style="background-color: #F7F7F7;"></th>
+                    <th ng-repeat="plan in $ctrl.plans" class="position-relative" style="background-color: #F7F7F7;">
+                        {{ plan.name }}
+                        <span class="badge badge-popular top-banner my-auto align-content-center text-center" ng-if="plan.popular">Popular</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr ng-repeat="feature in $ctrl.features">
+                    <td class="feature-name fw-bold p-5" style="background-color: #F4F9FF;"><strong>{{ feature.name }}</strong></td>
+                    <td ng-repeat="plan in $ctrl.plans" class="p-5 text-center align-content-center" style="background-color: #F4F9FF; ">{{ plan.details[$index] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

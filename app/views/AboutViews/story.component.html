@@ -1,0 +1,22 @@
+<div class="row align-items-center  story-section container px-4">
+    <!-- Left: Image -->
+    <div class="col-md-5 mb-3 ">
+        <img ng-src="{{story.story.image}}" class="img-fluid rounded" alt="Story Image">
+    </div>
+
+    <!-- Right: Content -->
+    <div class="col-md-7 text-start flex-column g-5 px-5">
+        <!-- Badge -->
+        <div class="badge-custom px-4 py-2 rounded-pill  text-black shadow-sm d-inline-flex align-items-center shadow-sm">
+            <i class="fas fa-book"></i> {{story.story.badgeText}}
+        </div>
+
+        <!-- Title -->
+        <h3 class="fw-bold mt-3">{{story.story.title}}</h3>
+
+        <!-- Description -->
+        <p ng-repeat="paragraph in story.story.description">
+            {{paragraph}}
+          </p>
+    </div>
+</div>

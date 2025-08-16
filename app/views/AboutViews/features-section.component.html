@@ -1,0 +1,26 @@
+<div class="container text-center py-5">
+    <!-- Badge -->
+    <div class="badge-custom px-4 py-2 rounded-pill text-black shadow-sm d-inline-flex align-items-center">
+        <i class="fas fa-leaf me-2 medal"></i> {{vm.featuresData.badgeText}}
+    </div>
+
+    <!-- Title & Subtitle -->
+    <h2 class="fw-bold mt-3">{{vm.featuresData.title}}</h2>
+    <p class="text-secondary">{{vm.featuresData.subtitle}}</p>
+
+    <!-- Features Grid -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-lg-4 col-md-6 mb-4" ng-repeat="feature in vm.featuresData.features">
+            <div class="featurecard border-0 shadow-sm rounded-lg p-3 text-center">
+                <div class="d-inline-block p-2 top-banner text-white rounded-circle" >
+                    <i class="{{ feature.icon }} text-white" ></i>
+                </div>
+                <h5 class="fw-bold">{{feature.title}}</h5>
+                <p class="text-secondary">{{feature.description}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Button -->
+    <button class="btn btn-success mt-4 px-4 py-2 rounded-lg">{{vm.featuresData.buttonText}}</button>
+</div>

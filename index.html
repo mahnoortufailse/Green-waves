@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Green Waves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <!-- Navbar Component -->
+    <navbar-component></navbar-component>
+
+    <div ng-view></div><!-- Dynamic Content (Pages will be loaded here) -->
+    
+
+    <!-- Footer Component -->
+    <footer-component></footer-component>
+    <!-- Load AngularJS & App Files -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.min.js"></script>
+    
+    <script src="/app.module.js"></script>
+    <script src="app/home/home.component.js"></script>
+    <script src="app/AboutController/AboutPage.component.js"></script>
+    <script src="app/AboutController/mission.component.js"></script>
+    <script src="app/AboutController/story.component.js"></script>
+    <script src="app/AboutController/team-section.component.js"></script>
+    <script src="app/AboutController/features-section.component.js"></script>
+    
+    <script src="app/AboutController/benefits-section.component.js"></script>
+    <script src="app/ContactController/contactPage.component.js"></script>
+    <script src="app/ContactController/form-section.component.js"></script>
+    <script src="app/pricingController/pricingPage.component.js"></script>
+    <script src="app/pricingController/pricing-plan.component.js"></script>
+    <script src="app/pricingController/priceCard-section.component.js"></script>
+    <script src="app/home/hero.component.js"></script>
+    <script src="app/components/navbar.component.js"></script>
+    <script src="app/components/footer.component.js"></script>
+    <script src="app/home/discount.component.js"></script>
+    <script src="app/home/features.component.js"></script>
+    <script src="app/home/companies.component.js"></script>
+    <script src="app/home/about.component.js"></script>
+    <script src="app/home/pricing.component.js"></script>
+    <script src="app/home/LearnMore.component.js"></script>
+    <script src="app/home/sponsers.component.js"></script>
+    <script src="app/home/charity.component.js"></script>
+    <script src="app/home/stats.component.js"></script>
+    <script src="app/home/faq.component.js"></script>
+    <script src="app/home/contactUs.component.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
